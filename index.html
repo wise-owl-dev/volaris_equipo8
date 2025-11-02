@@ -142,9 +142,133 @@
             
         </section>
 
-        <section class="tab-seccion" id="status-vuelo">
-            
-        </section>
+        <section class="tab-seccion" id="estatus-vuelo">
+    <div class="contenedor-estatus-vuelo">
+        <div class="tarjeta-estatus">
+            <h3 class="titulo-estatus">Estatus de vuelo</h3>
+            <p class="descripcion-estatus">Consulta información actualizada sobre tu vuelo.</p>
+
+            <div class="pestañas-estatus">
+                <button class="pestana-estatus activo" data-tipo="ruta">Ruta y fecha</button>
+                <button class="pestana-estatus" data-tipo="numero">Número de vuelo</button>
+            </div>
+
+            <!-- Formulario por Ruta y Fecha -->
+            <div class="formulario-estatus-container" id="form-ruta">
+                <div class="selectores-ruta">
+                    <div class="selector-ciudad">
+                        <select class="select-ciudad" id="origen-vuelo">
+                            <option value="">- - -</option>
+                            <option value="MEX">Ciudad de México (MEX)</option>
+                            <option value="GDL">Guadalajara (GDL)</option>
+                            <option value="MTY">Monterrey (MTY)</option>
+                            <option value="CUN">Cancún (CUN)</option>
+                            <option value="TIJ">Tijuana (TIJ)</option>
+                        </select>
+                        <label>Selecciona tu origen</label>
+                    </div>
+
+                    <div class="icono-avion-estatus">
+                         <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.5" 
+                            stroke="currentColor" 
+                            width="24" height="24">
+                            <path stroke-linecap="round" stroke-linejoin="round" 
+                            d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                        </svg>
+                    </div>
+
+                    <div class="selector-ciudad">
+                        <select class="select-ciudad" id="destino-vuelo">
+                            <option value="">- - -</option>
+                            <option value="MEX">Ciudad de México (MEX)</option>
+                            <option value="GDL">Guadalajara (GDL)</option>
+                            <option value="MTY">Monterrey (MTY)</option>
+                            <option value="CUN">Cancún (CUN)</option>
+                            <option value="TIJ">Tijuana (TIJ)</option>
+                        </select>
+                        <label>Selecciona tu destino</label>
+                    </div>
+                </div>
+
+                <div class="selector-fecha-estatus">
+                    <div class="icono-calendario-estatus">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <div class="contenido-fecha-estatus">
+                        <label>Salida</label>
+                        <input type="date" class="input-fecha-estatus" id="fecha-vuelo" value="2025-11-01">
+                        <div class="fecha-formateada">Sábado, 1 Nov, 2025</div>
+                    </div>
+                    <div class="flecha-selector">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <button class="boton-buscar-vuelo">
+                    Buscar vuelo
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                    </svg>
+                </button>
+
+                <p class="nota-frontier">
+                    Si tu vuelo es operado por Frontier, consulta tu estatus de vuelo 
+                    <a href="#" class="link-frontier">aquí</a>
+                </p>
+            </div>
+
+            <!-- Formulario por Número de Vuelo (oculto inicialmente) -->
+            <div class="formulario-estatus-container oculto" id="form-numero">
+                <div class="campo-numero-vuelo">
+                    <input type="text" placeholder="Ingresa el número de vuelo" class="input-numero-vuelo">
+                    <label>Número de vuelo</label>
+                </div>
+
+                <div class="selector-fecha-estatus">
+                    <div class="icono-calendario-estatus">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <div class="contenido-fecha-estatus">
+                        <label>Fecha</label>
+                        <input type="date" class="input-fecha-estatus" value="2025-11-01">
+                        <div class="fecha-formateada">Sábado, 1 Nov, 2025</div>
+                    </div>
+                    <div class="flecha-selector">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+                <button class="boton-buscar-vuelo">
+                    Buscar vuelo
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                    </svg>
+                </button>
+
+                <p class="nota-frontier">
+                    Si tu vuelo es operado por Frontier, consulta tu estatus de vuelo 
+                    <a href="#" class="link-frontier">aquí</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- <section class="mejores-vuelos">
             <div class="contenedor-principal">

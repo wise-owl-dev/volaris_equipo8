@@ -1306,3 +1306,289 @@ body {
   display: block; /* Solo el activo se muestra */
   animation: fadeIn 0.4s; /* Animación suave */
 }
+
+/* Sección Estatus de Vuelo */
+#estatus-vuelo {
+  background-image: url('https://fotografias-neox.atresmedia.com/clipping/cmsimages02/2021/06/29/65057A7F-99D1-4680-AB14-E1E8DD50DEFE/60.jpg?crop=1920,1080,x0,y184&width=640&height=360&optimize=high&format=webply');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  padding: 60px 0;
+  position: relative;
+}
+
+#estatus-vuelo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(74, 31, 88, 0.7), rgba(42, 23, 60, 0.85));
+  z-index: 1;
+}
+
+.contenedor-estatus-vuelo {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.tarjeta-estatus {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  width: 35%;
+  height: 600px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-estatus {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--volaris-dark);
+  margin-bottom: 10px;
+}
+
+.descripcion-estatus {
+  font-size: 14px;
+  color: var(--volaris-gray);
+  margin-bottom: 25px;
+}
+
+.pestañas-estatus {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.pestana-estatus {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  background: #f5f5f5;
+  color: var(--volaris-gray);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pestana-estatus.activo {
+  background: var(--volaris-magenta);
+  color: white;
+}
+
+.pestana-estatus:hover:not(.activo) {
+  background: #e8e8e8;
+}
+
+.formulario-estatus-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formulario-estatus-container.oculto {
+  display: none;
+}
+
+.selectores-ruta {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.selector-ciudad {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 140px;
+  height: 100px;
+  justify-content: center;
+}
+
+.selector-ciudad label {
+  font-size: 11px;
+  color: var(--volaris-gray);
+  margin-bottom: 5px;
+}
+
+.select-ciudad {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--volaris-dark);
+  cursor: pointer;
+  appearance: none;
+  padding-right: 20px;
+}
+
+.select-ciudad:focus {
+  outline: none;
+}
+
+.icono-avion-estatus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--volaris-gray);
+  margin-top: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--volaris-gray);
+  padding: 5px;
+}
+
+.selector-fecha-estatus {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.selector-fecha-estatus:hover {
+  border-color: var(--volaris-magenta);
+}
+
+.icono-calendario-estatus {
+  color: var(--volaris-gray);
+  display: flex;
+  align-items: center;
+}
+
+.contenido-fecha-estatus {
+  flex: 1;
+}
+
+.contenido-fecha-estatus label {
+  display: block;
+  font-size: 11px;
+  color: var(--volaris-gray);
+  margin-bottom: 2px;
+}
+
+.input-fecha-estatus {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fecha-formateada {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--volaris-dark);
+}
+
+.flecha-selector {
+  color: var(--volaris-gray);
+  display: flex;
+  align-items: center;
+}
+
+.campo-numero-vuelo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.campo-numero-vuelo label {
+  font-size: 11px;
+  color: var(--volaris-gray);
+  margin-bottom: 5px;
+}
+
+.input-numero-vuelo {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--volaris-dark);
+  padding: 0;
+}
+
+.input-numero-vuelo:focus {
+  outline: none;
+}
+
+.input-numero-vuelo::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+.boton-buscar-vuelo {
+  background: var(--volaris-magenta);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.boton-buscar-vuelo:hover {
+  background: #8e3670;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(162, 66, 132, 0.3);
+}
+
+.boton-buscar-vuelo svg {
+  width: 18px;
+  height: 18px;
+}
+
+.nota-frontier {
+  font-size: 12px;
+  color: var(--volaris-gray);
+  text-align: center;
+  margin-top: 15px;
+}
+
+.link-frontier {
+  color: var(--volaris-magenta);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-frontier:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .selectores-ruta {
+    grid-template-columns: 1fr;
+  }
+
+  .icono-avion-estatus {
+    transform: rotate(90deg);
+    margin: 0;
+  }
+
+  .tarjeta-estatus {
+    padding: 30px 20px;
+  }
+}
