@@ -1,6 +1,7 @@
 /* Variables de colores Volaris */
 :root {
-  --volaris-magenta: #a24284;
+  /* --volaris-magenta: #a24284; */
+  --volaris-magenta: #a12885;
   --volaris-purple: hsl(285, 48%, 34%);
   --volaris-dark: #1a1a1a;
   --volaris-gray: #666;
@@ -28,11 +29,14 @@ body {
   padding: 0 40px;
 }
 
+/* Header */
 .barrita-arriba {
   background-color: var(--white);
   border-bottom: 1px solid #e0e0e0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
 }
 
@@ -169,6 +173,7 @@ body {
 #seccion_reserva {
   background-color: #f7f7f7;
   padding: 40px 0;
+  margin-top: 128.5px;
 }
 
 .contenedor-reserva {
@@ -1294,15 +1299,219 @@ body {
   }
 }
 
-#mi-reserva {
-  background-color: #851414;
-  padding: 40px 0;
-}
-
 .tab-seccion {
   display: none; /* Oculto por defecto */
 }
+
 .tab-seccion.active {
   display: block; /* Solo el activo se muestra */
   animation: fadeIn 0.4s; /* Animación suave */
+}
+
+/* Sección Administra tus viajes */
+#mi-reserva {
+  background-color: #f7f7f7;
+  min-height: 500px;
+  margin-top: 128.5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.contenedor-administra-viajes {
+  max-width: 100%;
+  margin: 0 auto;
+  /* padding: 0 40px; */
+  display: grid;
+  grid-template-columns: 970px 1fr; /* Primera columna fija, segunda toma el resto */
+  width: 100%;
+  align-items: center;
+}
+.columna-formulario-reserva {
+  flex: 0 0 55%;
+  padding: 0px 40px;
+  padding-left: 18%;
+}
+
+.columna-imagen-reserva {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.titulo-administra {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--volaris-dark);
+}
+.descripcion-administra {
+  font-size: 17px;
+  color: var(--volaris-dark);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.icono-ayuda {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  background-color: var(--volaris-magenta);
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.formulario-administra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.campo-administra {
+  width: 500px;
+  padding: 18px 20px;
+  border: 2px solid #d0d0d0;
+  border-radius: 5px;
+  font-size: 15px;
+  color: var(--volaris-dark);
+  height: 60px;
+}
+
+.campo-administra:focus {
+  outline: none;
+  border: 2px solid var(--volaris-magenta);
+}
+.boton-ir-reserva {
+  background: var(--volaris-magenta);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s;
+  margin-top: 10px;
+  width: 500px;
+  height: 60px;
+}
+
+.boton-ir-reserva:hover {
+  background: #8e3670;
+}
+
+.links-ayuda-reserva {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.link-no-encuentro,
+.link-entra-cuenta {
+  color: var(--volaris-magenta);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.link-no-encuentro:hover,
+.link-entra-cuenta:hover {
+  color: #8e3670;
+  text-decoration: underline;
+}
+
+.texto-normal {
+  color: var(--volaris-dark);
+}
+
+.imagen-playa {
+  position: absolute; /* Posicionamiento absoluto */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.caja-info-reserva {
+  position: absolute;
+  bottom: 90px;
+  left: 130px;
+  background: #893376;
+  opacity: 0.95;
+  color: white;
+  padding: 15px 15px;
+  border-radius: 12px;
+  width: 380px;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.caja-info-reserva h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.lista-acciones {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-acciones li {
+  font-size: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.icono-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .contenedor-administra-viajes {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .columna-formulario-reserva {
+    max-width: 100%;
+  }
+
+  .columna-imagen-reserva {
+    height: 400px;
+  }
+
+  .caja-info-reserva {
+    position: static;
+    margin-top: 20px;
+    max-width: 100%;
+  }
 }

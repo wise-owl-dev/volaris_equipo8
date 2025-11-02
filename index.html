@@ -139,14 +139,52 @@
         </section>
 
         <section class="tab-seccion" id="mi-reserva">
-            
+            <div class="contenedor-administra-viajes">
+                <div class="columna-formulario-reserva">
+                    <h6 class="titulo-administra">Administra tus viajes</h6>
+                    <p class="descripcion-administra">
+                        Ingresa tu código de reserva y apellidos tal como aparecen en tu confirmación de compra. Si 
+                         <span class="icono-ayuda">?</span>
+                        registraste dos apellidos, deberás escribir ambos para acceder.
+                       
+                    </p>
+
+                    <form class="formulario-administra">
+                        <input class="campo-administra" type="text" id="codigo-reserva" placeholder="Código de reservación" required>
+                        <input class="campo-administra" type="text" id="apellidos" placeholder="Apellidos (como aparecen en tu confirmación)" required>
+                        <button type="submit" class="boton-ir-reserva">Ir a mi reserva</button>
+                    </form>
+
+                    <div class="links-ayuda-reserva">
+                        <a href="#" class="link-no-encuentro">No encuentro mi código de reservación</a>
+                        <a href="#" class="link-entra-cuenta">Entra aquí <span class="texto-normal">con tu cuenta</span></a>
+                        
+                    </div>
+                </div>
+
+                <div class="columna-imagen-reserva">
+                    <img src="imagenes/mi_reserva_playa.jpg" 
+                        alt="Playa" 
+                        class="imagen-playa">
+                    <div class="caja-info-reserva">
+                        <h3>Aquí puedes:</h3>
+                        <ul class="lista-acciones">
+                            <li><span class="icono-check"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8e3670"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg> </span>Consultar cuanto equipaje puedes llevar</li>
+                            <li><span class="icono-check"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8e3670"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg> </span>Seleccionar tu asiento</li>
+                            <li><span class="icono-check"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8e3670"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span>Agregar equipaje extra</li>
+                            <li><span class="icono-check"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8e3670"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span> Añadir servicios a tu viaje</li>
+                            <li><span class="icono-check"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8e3670"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg></span>Cambiar o cancelar tu vuelo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="tab-seccion" id="status-vuelo">
             
         </section>
 
-        <!-- <section class="mejores-vuelos">
+        <section class="mejores-vuelos">
             <div class="contenedor-principal">
                 <h2 class="titulo-seccion">Mejores vuelos con Volaris</h2>
 
@@ -237,7 +275,7 @@
                     <span class="dot-paginacion"></span>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section class="seccion-pagos">
             <div class="contenedor-principal">
