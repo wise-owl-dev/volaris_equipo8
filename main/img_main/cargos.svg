@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon/Cards/Cargo/Hover</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Cards/Cargo/Hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#A12885" fill-rule="nonzero" cx="40" cy="40" r="40"></circle>
+        <g id="Cargo" transform="translate(20.000000, 20.000000)">
+            <g id="Group">
+                <polygon id="Path" points="0 0 40 0 40 40 0 40"></polygon>
+                <path d="M8.53333333,8.33333333 L31.45,8.33333333 L29.8833333,6.66666667 L9.88333333,6.66666667 L8.53333333,8.33333333 M34.2333333,8.71666667 C34.7166667,9.28333333 35,10 35,10.8333333 L35,31.6666667 C35,33.5076158 33.5076158,35 31.6666667,35 L8.33333333,35 C6.49238417,35 5,33.5076158 5,31.6666667 L5,10.8333333 C5,10 5.28333333,9.28333333 5.76666667,8.71666667 L8.06666667,5.91666667 C8.53333333,5.35 9.21666667,5 10,5 L30,5 C30.7833333,5 31.4666667,5.35 31.9166667,5.91666667 L34.2333333,8.71666667 M10,30 L20,30 L20,25 L10,25 L10,30 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
