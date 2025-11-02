@@ -7,9 +7,7 @@
     <title>Volaris - Las tarifas más bajas de México</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
-<body>
-    <header class="barrita-arriba">
+<header class="barrita-arriba">
         <div class="caja-barrita">
             <div class="fila-superior-header">
                 <div class="logotipo">
@@ -29,10 +27,10 @@
 
             <div class="fila-inferior-header">
                 <nav class="menu-principal">
-                    <a href="#" class="link-menu activo">Vuelos</a>
-                    <a href="#" class="link-menu">Vuelo+Hotel</a>
-                    <a href="#" class="link-menu">Mi reserva</a>
-                    <a href="#" class="link-menu">Estatus de vuelo</a>
+                    <a href="#" class="link-menu activo" data-tab="seccion_reserva">Vuelos</a>
+                    <a href="#" class="link-menu" data-tab="vuelo-hotel">Vuelo+Hotel</a>
+                    <a href="#" class="link-menu" data-tab="mi-reserva">Mi reserva</a>
+                    <a href="#" class="link-menu" data-tab="estatus-vuelo">Estatus de vuelo</a>
                 </nav>
 
                 <div class="menu-secundario">
@@ -46,9 +44,9 @@
             </div>
         </div>
     </header>
-
+<body>
     <main class="contenido-principal">
-        <section class="seccion-reserva">
+        <section class="tab-seccion active" id="seccion_reserva">
             <div class="contenedor-reserva">
                 <div class="caja-formulario">
                     <div class="pestañitas-viaje">
@@ -138,6 +136,14 @@
                     <button class="flecha-siguiente-carrusel">›</button>
                 </div>
             </div>
+        </section>
+
+        <section class="tab-seccion" id="mi-reserva">
+            
+        </section>
+
+        <section class="tab-seccion" id="status-vuelo">
+            
         </section>
 
         <!-- <section class="mejores-vuelos">
@@ -519,6 +525,8 @@
         </svg>
 
     </button>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
