@@ -1298,14 +1298,13 @@ body {
     display: none;
   }
 }
-
 .tab-seccion {
-  display: none; /* Oculto por defecto */
+  display: none;
 }
 
 .tab-seccion.active {
-  display: block; /* Solo el activo se muestra */
-  animation: fadeIn 0.4s; /* Animación suave */
+  display: block;
+  animation: fadeIn 0.4s;
 }
 
 /* Sección Administra tus viajes */
@@ -1314,10 +1313,14 @@ body {
   min-height: 500px;
   margin-top: 128.5px;
   width: 100%;
-  display: flex;
   align-items: center;
   overflow: hidden;
 }
+
+#mi-reserva.active {
+  display: flex; /* ← AGREGAR ESTO */
+}
+
 .contenedor-administra-viajes {
   max-width: 100%;
   margin: 0 auto;
@@ -1517,7 +1520,7 @@ body {
 }
 /* Sección Estatus de Vuelo */
 #estatus-vuelo {
-  background-image: url('https://fotografias-neox.atresmedia.com/clipping/cmsimages02/2021/06/29/65057A7F-99D1-4680-AB14-E1E8DD50DEFE/60.jpg?crop=1920,1080,x0,y184&width=640&height=360&optimize=high&format=webply');
+  background-image: url("https://fotografias-neox.atresmedia.com/clipping/cmsimages02/2021/06/29/65057A7F-99D1-4680-AB14-E1E8DD50DEFE/60.jpg?crop=1920,1080,x0,y184&width=640&height=360&optimize=high&format=webply");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1527,13 +1530,17 @@ body {
 }
 
 #estatus-vuelo::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(74, 31, 88, 0.7), rgba(42, 23, 60, 0.85));
+  background: linear-gradient(
+    135deg,
+    rgba(74, 31, 88, 0.7),
+    rgba(42, 23, 60, 0.85)
+  );
   z-index: 1;
 }
 
