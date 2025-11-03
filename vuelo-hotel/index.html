@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volaris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-superior">
+                <div class="logo">
+                    <div class="logo-texto">
+                        <span class="volaris-text">volaris</span>
+                        <span class="slogan">Tus vacaciones con YA VAS</span>
+                    </div>
+                    <div class="logo-img">
+                        <img src="img/image-volaris-logo.png">
+                    </div>
+                </div>
+
+                <div class="opciones-derecha">
+                    <div class="info-ventas">
+                        <div class="icono-telefono">
+                            <img src="img/image-audifonos.png">
+                        </div>
+                        <span class="texto-ventas">Para ventas</span>
+                        <span class="numero-telefono">8002650128</span>
+                    </div>
+                    <div class="boton-ayuda">
+                        <div class="icono-ayuda">
+                            <img src="img/image-signointerrogacion.png">
+                        </div>
+                        <span>Ayuda</span>
+                    </div>
+                    <div class="boton-viajes">
+                        <div class="icono-maleta">
+                            <img src="img/image-maleta.png">
+                        </div>
+                        <span>Mis Viajes</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="menu-navegacion">
+                <li class="menu-item activo">
+                    <a href="#">
+                        <div class="icono-menu">
+                            <img src="img/image-paquete.png">
+                        </div>
+                        <span>Paquetes</span>
+                        <span class="badge-ahorra">Ahorra</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <div class="icono-menu">
+                            <img src="img/image-alojamiento.png">
+                        </div>
+                        <span>Alojamientos</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <div class="icon-av">
+                            <div class="icono-menu">
+                            <img src="img/image-vuelos.png">
+                            </div>
+                        </div>
+                        <span>Vuelos</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <div class="icon-autos">
+                            <div class="icono-menu">
+                                <img src="img/image-autos.png">
+                            </div>
+                        </div>
+                        <span>Autos</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <div class="icon-tralados">
+                            <div class="icono-menu">
+                            <img src="img/image-traslados.png">
+                            </div>
+                        </div>
+                        <span>Traslados</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <div class="act">
+                            <div class="icono-menu">
+                            <img src="img/image-actividades.png">
+                            </div>
+                        </div>
+                        <span>Actividades</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <div class="icon-disney">
+                            <div class="icono-menu">
+                            <img src="img/image-disney.png">
+                            </div>
+                        </div>
+                        <span>Disney</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <div class="icono-menu">
+                            <img src="img/image-asistencias.png">
+                        </div>
+                        <span>Asistencias</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <div class="icon-ofertas">
+                            <div class="icono-menu">
+                            <img src="img/image-ofertas.png">
+                            </div>
+                        </div>
+                        <span>Ofertas</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-busqueda">
+            <h2 class="titulo-seccion">Paquetes turísticos</h2>
+            
+            <div class="contenedor-busqueda">
+                <div class="formulario-busqueda">
+                    <div class="campo-origen">
+                        <span class="etiqueta-campo">ORIGEN</span>
+                        <div class="input-wrapper">
+                            <div class="icono-ubicacion">
+                                <img src="img/image-circulo.png">
+                            </div>
+                            <input type="text" placeholder="Oaxaca de Juárez, Oa..." value="Oaxaca de Juárez, Oa...">
+                        </div>
+                    </div>
+
+                    <div class="boton-intercambio">
+                        <img src="img/image-flechas.png">
+                    </div>
+
+                    <div class="campo-destino">
+                        <span class="etiqueta-campo">DESTINO</span>
+                        <div class="input-wrapper">
+                            <div class="icono-ubicacion">
+                                <img src="img/image-ubi.png">
+                            </div>
+                            <input type="text" placeholder="Ingresa hacia dónde viajas">
+                        </div>
+                    </div>
+
+                    <div class="campo-fechas">
+                        <span class="etiqueta-campo">FECHAS</span>
+                        <div class="contenedor-fechas">
+                            <div class="fecha-entrada">
+                                <div class="icono-calendario">
+                                    <img src="img/image-calendario.png">
+                                </div>
+                                <input type="text" placeholder="Entrada">
+                            </div>
+                            <div class="fecha-salida">
+                                <div class="icono-calendario">
+                                    <img src="img/image-calendario.png">
+                                </div>
+                                <input type="text" placeholder="Salida">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="campo-habitaciones">
+                        <span class="etiqueta-campo">HABITACIONES</span>
+                        <div class="contenedor-habitaciones">
+                            <div class="habitacion-item">
+                                <div class="icono-habitacion">
+                                    <img src="img/image-habitacion.png">
+                                </div>
+                                <span>1</span>
+                            </div>
+                            <div class="persona-item">
+                                <div class="icono-persona">
+                                    <img src="img/image-persona.png">
+                                </div>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="boton-buscar">
+                        <img src="img/image-buscar.png">
+                        Buscar
+                    </button>
+                </div>
+
+                <div class="cambiar-busqueda">
+                    <img src="img/image-editar.png">
+                    <span>Cambiar ciudad o fechas del alojamiento</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-promociones">
+            <h2 class="titulo-promociones">Promociones</h2>
+
+            <div class="grid-paquetes">
+                <div class="tarjeta-paquete">
+                    <div class="imagen-paquete">
+                        <img src="img/canncu.jpeg">
+                        <span class="duracion">5 DÍAS / 4 NOCHES</span>
+                    </div>
+                    <div class="info-paquete">
+                        <span class="tipo-paquete">PAQUETE</span>
+                        <h3 class="titulo-paquete">Paquetes a Cancún</h3>
+                        <div class="calificacion">
+                            <span class="numero-calif">8.4</span>
+                            <div class="estrellas">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                            </div>
+                        </div>
+                        <p class="partiendo">Partiendo desde Ciudad de México</p>
+                        <p class="incluye">Hotel + Vuelo</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <div class="imagen-paquete">
+                        <img src="img/lasvegas.jpeg">
+                        <span class="duracion">8 DÍAS / 7 NOCHES</span>
+                    </div>
+                    <div class="info-paquete">
+                        <span class="tipo-paquete">PAQUETE</span>
+                        <h3 class="titulo-paquete">Paquetes a Las Vegas</h3>
+                        <div class="calificacion">
+                            <span class="numero-calif">7.8</span>
+                            <div class="estrellas">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                            </div>
+                        </div>
+                        <p class="partiendo">Partiendo desde Ciudad de México</p>
+                        <p class="incluye">Hotel + Vuelo</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <div class="imagen-paquete">
+                        <img src="img/puertovallarta.jpeg">
+                        <span class="duracion">4 DÍAS / 3 NOCHES</span>
+                    </div>
+                    <div class="info-paquete">
+                        <span class="tipo-paquete">PAQUETE</span>
+                        <h3 class="titulo-paquete">Paquetes a Puerto Vallarta</h3>
+                        <div class="calificacion">
+                            <span class="numero-calif calificacion-alta">7.1</span>
+                            <div class="estrellas">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                            </div>
+                        </div>
+                        <p class="partiendo">Partiendo desde Ciudad de México</p>
+                        <p class="incluye">Hotel + Vuelo</p>
+                        <span class="oferta-imbatible">Oferta Imbatible</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <div class="imagen-paquete">
+                        <img src="img/huatulco.jpeg">
+                        <span class="duracion">5 DÍAS / 4 NOCHES</span>
+                    </div>
+                    <div class="info-paquete">
+                        <span class="tipo-paquete">PAQUETE</span>
+                        <h3 class="titulo-paquete">Paquetes a Huatulco</h3>
+                        <div class="calificacion">
+                            <span class="numero-calif calificacion-alta">8.2</span>
+                            <div class="estrellas">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                            </div>
+                        </div>
+                        <p class="partiendo">Partiendo desde Ciudad de México</p>
+                        <p class="incluye">Hotel + Vuelo</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <div class="imagen-paquete">
+                        <img src="img/mazatlan.jpeg">
+                        <span class="duracion">5 DÍAS / 4 NOCHES</span>
+                    </div>
+                    <div class="info-paquete">
+                        <span class="tipo-paquete">PAQUETE</span>
+                        <h3 class="titulo-paquete">Paquetes a Mazatlán</h3>
+                        <div class="calificacion">
+                            <span class="numero-calif calificacion-excelente">8.0</span>
+                            <div class="estrellas">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                            </div>
+                        </div>
+                        <p class="partiendo">Partiendo desde Ciudad de México</p>
+                        <p class="incluye">Hotel + Vuelo</p>
+                        <span class="oferta-imbatible">Oferta Imbatible</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <div class="imagen-paquete">
+                        <img src="img/ptoescondido.jpeg">
+                        <span class="duracion">5 DÍAS / 4 NOCHES</span>
+                    </div>
+                    <div class="info-paquete">
+                        <span class="tipo-paquete">PAQUETE</span>
+                        <h3 class="titulo-paquete">Paquetes a Puerto Escondido</h3>
+                        <div class="calificacion">
+                            <span class="numero-calif calificacion-alta">8.4</span>
+                            <div class="estrellas">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                            </div>
+                        </div>
+                        <p class="partiendo">Partiendo desde Ciudad de México</p>
+                        <p class="incluye">Hotel + Vuelo</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <div class="imagen-paquete">
+                        <img src="img/merida.jpeg">
+                        <span class="duracion">5 DÍAS / 4 NOCHES</span>
+                    </div>
+                    <div class="info-paquete">
+                        <span class="tipo-paquete">PAQUETE</span>
+                        <h3 class="titulo-paquete">Paquetes a Mérida</h3>
+                        <div class="calificacion">
+                            <span class="numero-calif calificacion-alta">7.3</span>
+                            <div class="estrellas">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                            </div>
+                        </div>
+                        <p class="partiendo">Partiendo desde Ciudad de México</p>
+                        <p class="incluye">Hotel + Vuelo</p>
+                        <span class="oferta-imbatible">Oferta Imbatible</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <div class="imagen-paquete">
+                        <img src="img/cabosanlicas.jpeg">
+                        <span class="duracion">5 DÍAS / 4 NOCHES</span>
+                    </div>
+                    <div class="info-paquete">
+                        <span class="tipo-paquete">PAQUETE</span>
+                        <h3 class="titulo-paquete">Paquetes a Cabo San Lucas</h3>
+                        <div class="calificacion">
+                            <span class="numero-calif calificacion-alta">8.4</span>
+                            <div class="estrellas">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                                <img src="img/image-estrella.png">
+                            </div>
+                        </div>
+                        <p class="partiendo">Partiendo desde Ciudad de México</p>
+                        <p class="incluye">Hotel + Vuelo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-banner">
+            <div class="banner-promocional">
+                <div class="imagen-banner">
+                    <img src="img/image-mujer.png">
+                </div>
+                <div class="sello-garantia">
+                    <img src="img/image-garantizada.png">
+                </div>
+                <div class="texto-banner">
+                    <h2>Nuestros paquetes de viaje tienen</h2>
+                    <h2>los mejores beneficios del mercado</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-informacion">
+            <div class="tarjeta-asesoria">
+                <div class="icono-asesoria">
+                    <img src="img/image-auf.png">
+                </div>
+                <div class="contenido-asesoria">
+                    <h3>Compra tu viaje</h3>
+                    <p class="subtitulo-asesoria">con asesoría personalizada</p>
+                    <p class="descripcion-asesoria">Nuestros agentes expertos te pueden ayudar a concretar tu viaje. ¡Consulta nuestros canales de atención!</p>
+                    <button class="boton-canales">Conocer canales</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-invex">
+                <div class="contenido-invex">
+                    <h3>Solicita tu Tarjeta Volaris INVEX</h3>
+                    <div class="imagen-tarjetas">
+                        <img src="img/image-tarjetas.png">
+                    </div>
+                    <button class="boton-aqui">Aquí</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-terminos">
+            <h3 class="titulo-terminos">TÉRMINOS Y CONDICIONES DE LAS PROMOCIONES</h3>
+            <p class="texto-terminos">Consulta todos los términos y condiciones de las promociones vigentes en este enlace: <a href="#">VER TÉRMINOS Y CONDICIONES</a></p>
+        </section>
+
+        <section class="seccion-suscripcion">
+            <div class="contenedor-suscripcion">
+                <h3 class="titulo-suscripcion">Ofertas exclusivas en tu email</h3>
+                <div class="formulario-suscripcion">
+                    <div class="campo-nombre">
+                        <label>Nombre:</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="campo-email">
+                        <label>Correo electrónico:</label>
+                        <input type="email" placeholder="">
+                    </div>
+                    <button class="boton-suscribirse">SUSCRIBIRSE</button>
+                </div>
+                <div class="checkbox-ofertas">
+                    <input type="checkbox" id="ofertas">
+                    <label for="ofertas">Recibir las mejores ofertas Ya Vas de Volaris</label>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-superior">
+            <div class="redes-sociales">
+                <a href="#" class="red-social">
+                    <img src="img/image-x.png">
+                </a>
+                <a href="#" class="red-social">
+                    <img src="img/image-twiter.png">
+                </a>
+                <a href="#" class="red-social">
+                    <img src="img/image-facebook.png">
+                </a>
+            </div>
+            <div class="telefono-footer">
+                <span>Para Ventas <strong>8002650128</strong></span>
+            </div>
+        </div>
+
+        <div class="footer-contenido">
+            <div class="columna-footer">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Aviso de privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="columna-footer">
+                <h4>Conoce Ya Vas</h4>
+                <ul>
+                    <li><a href="#">Información</a></li>
+                </ul>
+            </div>
+
+            <div class="columna-footer">
+                <h4>Sobre Ya Vas</h4>
+                <p>Somos la agencia de viajes de Volaris, brindamos una experiencia 360 para que tengas todo lo necesario para el próximo viaje al mejor costo.</p>
+            </div>
+        </div>
+
+        <div class="footer-inferior">
+            <p>©2025 Volaris tus vacaciones con Ya Vas y su logotipo son marcas registradas de Volaris</p>
+            <a href="#">Configuración de cookies</a>
+        </div>
+    </footer>
+</body>
+</html>
