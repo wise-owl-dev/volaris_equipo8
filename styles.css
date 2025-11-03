@@ -1527,6 +1527,7 @@ body {
   min-height: 600px;
   padding: 60px 0;
   position: relative;
+  margin-top: 128.5px;
 }
 
 #estatus-vuelo::before {
