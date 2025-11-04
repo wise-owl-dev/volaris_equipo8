@@ -49,4 +49,15 @@ document.addEventListener("DOMContentLoaded", function () {
   if (savedTab && document.getElementById(savedTab)) {
     switchTab(null, savedTab);
   }
+
+  const vueloHotelLinks = document.querySelectorAll(
+    'a[href*="vuelo-hotel"], .boton-borde'
+  );
+
+  vueloHotelLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "vuelo-hotel/index.html";
+    });
+  });
 });
